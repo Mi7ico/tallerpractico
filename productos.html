@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcana Store | Productos</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container navbar__inner">
+    <a class="brand" href="index.html">
+    <span class="brand__dot" aria-hidden="true"></span>
+    <span>Arcana Store</span>
+    </a>
+
+<button class="nav-toggle" type="button"
+    data-nav-toggle
+    aria-controls="navlinks"
+    aria-expanded="false">
+    ☰ Menú
+</button>
+
+<nav class="navlinks" id="navlinks" data-navlinks aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="productos.html">Productos</a>
+</nav>
+
+<a class="btn btn--success" href="#catalogo">Ir al catálogo</a>
+</div>
+</header>
+
+<main>
+
+<!-- FILTROS -->
+<section class="section">
+<div class="container">
+    <div class="section__head">
+    <h2>Catálogo Dota 1</h2>
+    <p>Busca por nombre o filtra por categoría (JS).</p>
+    </div>
+
+<div class="card">
+    <div class="filters" role="search" aria-label="Filtros de productos">
+        <input class="input" type="search" placeholder="Buscar: invoker, pudge, coaching..."
+        aria-label="Buscar producto" data-search />
+
+<select class="select" aria-label="Seleccionar categoría" data-category>
+        <option value="">Todas las categorías</option>
+        <option value="skins">Skins</option>
+        <option value="coaching">Coaching</option>
+        <option value="items">Packs / Items</option>
+    </select>
+
+        <span class="badge">Tip: escribe “invoker”</span>
+        </div>
+
+        <p class="small" style="margin-top:10px;">
+            *Proyecto: productos Dota 1.
+        </p>
+        </div>
+    </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="section" id="catalogo">
+    <div class="container">
+        <div class="section__head">
+        <h2>Productos destacados</h2>
+        <p>Catálogo pequeño con cards responsive.</p>
+    </div>
+
+        <div class="grid grid--4">
+
+        <article class="card" data-product data-name="Skin Void Chrono" data-category="skins">
+            <div class="card__img">
+                <img src="img/productos/skin2.jpg" alt="Skin del héroe" />
+            </div>
+            <h3>Skin Void Chrono</h3>
+            <p class="small">Categoría: Skins</p>
+            <p style="margin-top:10px;">Estilo alternativo para Faceless Void.</p>
+            <p style="margin:10px 0;"><b>$4.99</b></p>
+            <button class="btn btn--brand" type="button">Comprar</button>
+        </article>
+
+        <article class="card" data-product data-name="Skin Invoker Arcana" data-category="skins">
+            <div class="card__img">
+                <img src="img/productos/skin1.jpg" alt="Skin del héroe" />
+            </div>
+            <h3>Skin Invoker Arcana</h3>
+            <p class="small">Categoría: Skins</p>
+            <p style="margin-top:10px;">Apariencia premium inspirada en magia.</p>
+            <p style="margin:10px 0;"><b>$5.49</b></p>
+            <button class="btn btn--brand" type="button">Comprar</button>
+        </article>
+
+        <article class="card" data-product data-name="Skin Pudge Carnicero" data-category="skins">
+            <div class="card__img">
+                <img src="img/productos/skin3.jpg" alt="Skin del héroe" />
+            </div>
+            <h3>Skin Pudge Carnicero</h3>
+            <p class="small">Categoría: Skins</p>
+            <p style="margin-top:10px;">Diseño alternativo para Pudge.</p>
+            <p style="margin:10px 0;"><b>$4.50</b></p>
+            <button class="btn btn--brand" type="button">Comprar</button>
+        </article>
+
+        <article class="card" data-product data-name="Coaching 1 hora Dota 1" data-category="coaching">
+            <div class="card__img">
+                <img src="img/productos/coach.jpg" alt="Skin del héroe" />
+            </div>
+            <h3>Coaching 1 hora</h3>
+            <p class="small">Categoría: Coaching</p>
+            <p style="margin-top:10px;">Mejora farmeo, mapa y decisiones.</p>
+            <p style="margin:10px 0;"><b>$12.00</b></p>
+            <button class="btn btn--brand" type="button">Reservar</button>
+        </article>
+
+        <article class="card" data-product data-name="Coaching grupal estrategia" data-category="coaching">
+            <div class="card__img">
+                <img src="img/productos/pack.jpg" alt="Skin del héroe" />
+            </div>
+            <h3>Coaching grupal</h3>
+            <p class="small">Categoría: Coaching</p>
+            <p style="margin-top:10px;">Sesión para equipos (macro y roles).</p>
+            <p style="margin:10px 0;"><b>$18.00</b></p>
+            <button class="btn btn--brand" type="button">Reservar</button>
+        </article>
+
+        <article class="card" data-product data-name="Pack Inicial Dota 1" data-category="items">
+            <h3>Pack Inicial</h3>
+            <p class="small">Categoría: Packs / Items</p>
+            <p style="margin-top:10px;">Skins básicas + guía de héroes.</p>
+            <p style="margin:10px 0;"><b>$7.50</b></p>
+            <button class="btn btn--brand" type="button">Comprar</button>
+        </article>
+
+        <article class="card" data-product data-name="Pack Pro Competitivo" data-category="items">
+            <h3>Pack Pro</h3>
+            <p class="small">Categoría: Packs / Items</p>
+            <p style="margin-top:10px;">Skins premium + 1 coaching.</p>
+            <p style="margin:10px 0;"><b>$20.00</b></p>
+            <button class="btn btn--brand" type="button">Comprar</button>
+        </article>
+
+        <article class="card" data-product data-name="Pack Support Essentials" data-category="items">
+            <h3>Pack Support</h3>
+            <p class="small">Categoría: Packs / Items</p>
+            <p style="margin-top:10px;">Guía wards + tips de rotación.</p>
+            <p style="margin:10px 0;"><b>$9.00</b></p>
+            <button class="btn btn--brand" type="button">Comprar</button>
+        </article>
+
+        </div>
+        </div>
+    </section>
+
+</main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+    <div class="container footer__grid">
+        <div>
+        <b>Arcana Store</b>
+        <div class="small">Catálogo Dota 1 (ficticio)</div>
+        </div>
+        <div class="small">
+        <div>Soporte: 24/7 (demo)</div>
+        <div>© 2026</div>
+        </div>
+    </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
