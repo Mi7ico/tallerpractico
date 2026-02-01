@@ -28,6 +28,8 @@
         <a href="index.html">Inicio</a>
         <a href="nosotros.html">Nosotros</a>
         <a href="productos.html">Productos</a>
+        <a href="registro.html">Registro</a>
+        <a href="carrito.html">Carrito <span class="cart-badge" id="cartBadge">0</span></a>
     </nav>
 
     <a class="btn btn--brand" href="productos.html">Ver catálogo</a>
@@ -39,7 +41,7 @@
 <section class="hero">
 <div class="container hero__grid">
     <div class="hero__panel">
-        <span class="badge">Tienda ficticia - Dota 1</span>
+        <span class="badge">Tienda - Dota 1</span>
         <h1>Compra skins, packs y coaching<br/> con estilo gamer</h1>
         <p>
         Un sitio gamer especializado en la compra de skins de Dota ofrece a los jugadores una experiencia única y segura. 
@@ -51,12 +53,17 @@
         <div class="hero__cta">
             <a class="btn btn--brand" href="productos.html">Explorar skins</a>
             <a class="btn" href="nosotros.html">Conocer la tienda</a>
+        
+        <button class="btn btn--download" id="downloadBtn" type="button">
+        ⬇ Descargar juego
+        <small class="btn__sub">Gratis • Instalador oficial</small>
+        </button>
         </div>
 
     </div>
 
     <aside class="hero__media" aria-label="Imagen destacada">
-        <img src="img/hero.jpg" alt="Fondo gamer inspirado en Dota 1" />
+<img id="heroImg" class="img-clickable" src="img/hero.jpg" alt="Fondo gamer inspirado en Dota 1" />
     </aside>
     </div>
     </section>
@@ -77,6 +84,7 @@
 </footer>
 
 <!-- JS al final -->
+<div id="toast" class="toast" aria-live="polite"></div>
 <script src="js/main.js"></script>
 </body>
 </html>

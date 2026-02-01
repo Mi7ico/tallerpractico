@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcana Store | Registro</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container navbar__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__dot" aria-hidden="true"></span>
+      <span>Arcana Store</span>
+    </a>
+
+    <button class="nav-toggle" type="button"
+      data-nav-toggle aria-controls="navlinks" aria-expanded="false">
+      ☰ Menú
+    </button>
+
+    <nav class="navlinks" id="navlinks" data-navlinks aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="productos.html">Productos</a>
+      <a href="registro.html">Registro</a>
+      <a href="carrito.html">Carrito <span class="cart-badge" id="cartBadge">0</span></a>
+    </nav>
+
+    <a class="btn btn--brand" href="productos.html">Ver catálogo</a>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Registro de usuario</h2>
+        <p>Validación con expresiones regulares (JS).</p>
+      </div>
+
+      <div class="card">
+        <form id="registerForm" class="form">
+          <label class="small" for="fullName">Nombre completo</label>
+          <input class="input" id="fullName" name="fullName" placeholder="Ej: Luis Burneo" autocomplete="name" required />
+
+          <label class="small" for="email" style="margin-top:10px;">Correo</label>
+          <input class="input" id="email" name="email" type="email" placeholder="correo@ejemplo.com" autocomplete="email" required />
+
+          <label class="small" for="password" style="margin-top:10px;">Contraseña</label>
+          <input class="input" id="password" name="password" type="password" placeholder="Mínimo 8 caracteres" autocomplete="new-password" required />
+
+          <label class="small" for="confirmPassword" style="margin-top:10px;">Confirmar contraseña</label>
+          <input class="input" id="confirmPassword" name="confirmPassword" type="password" placeholder="Repite la contraseña" autocomplete="new-password" required />
+
+          <button class="btn btn--success" type="submit" style="margin-top:14px;">Registrar</button>
+          <p id="msg" class="small" style="margin-top:10px;"></p>
+
+          <p class="small" style="margin-top:10px;">
+            *Los datos se guardan en <b>localStorage</b> como JSON (demo).
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <b>Arcana Store</b>
+      <div class="small">Registro (demo)</div>
+    </div>
+    <div class="small">
+      <div>© 2026</div>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="js/main.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

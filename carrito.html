@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcana Store | Carrito</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container navbar__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__dot" aria-hidden="true"></span>
+      <span>Arcana Store</span>
+    </a>
+
+    <button class="nav-toggle" type="button"
+      data-nav-toggle aria-controls="navlinks" aria-expanded="false">
+      ☰ Menú
+    </button>
+
+    <nav class="navlinks" id="navlinks" data-navlinks aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="productos.html">Productos</a>
+      <a href="registro.html">Registro</a>
+      <a href="carrito.html">Carrito <span class="cart-badge" id="cartBadge">0</span></a>
+    </nav>
+
+    <a class="btn btn--brand" href="productos.html">Seguir comprando</a>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Tu carrito</h2>
+        <p>Agrega, elimina, cambia cantidades y mira el total en tiempo real.</p>
+      </div>
+
+      <div class="card">
+        <div id="cartContainer"></div>
+
+        <div class="cart-summary">
+          <div class="small">Total</div>
+          <div class="cart-total">$<span id="cartTotal">0.00</span></div>
+        </div>
+
+        <div class="row" style="gap:10px; margin-top:12px;">
+          <button class="btn" id="btnClear" type="button">Vaciar carrito</button>
+          <button class="btn btn--success" id="btnCheckout" type="button">Finalizar compra</button>
+        </div>
+
+        <p class="small" style="margin-top:10px;">
+          *El carrito se guarda en <b>localStorage</b> para que no se pierda al recargar.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <b>Arcana Store</b>
+      <div class="small">Carrito (demo)</div>
+    </div>
+    <div class="small">
+      <div>© 2026</div>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

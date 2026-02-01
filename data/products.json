@@ -1,0 +1,82 @@
+[
+  {
+    "id": "skin-void",
+    "name": "Skin Void Chrono",
+    "category": "skins",
+    "price": 4.99,
+    "image": "img/productos/skin2.jpg",
+    "description": "Estilo alternativo para Faceless Void."
+  },
+  {
+    "id": "skin-invoker",
+    "name": "Skin Invoker Arcana",
+    "category": "skins",
+    "price": 5.49,
+    "image": "img/productos/skin1.jpg",
+    "description": "Apariencia premium inspirada en magia."
+  },
+  {
+    "id": "skin-pudge",
+    "name": "Skin Pudge Carnicero",
+    "category": "skins",
+    "price": 4.5,
+    "image": "img/productos/skin3.jpg",
+    "description": "Diseño alternativo para Pudge."
+  },
+  {
+    "id": "coach-1h",
+    "name": "Coaching 1 hora",
+    "category": "coaching",
+    "price": 12.0,
+    "image": "img/productos/coach.jpg",
+    "description": "Mejora farmeo, mapa y decisiones."
+  },
+  {
+    "id": "coach-grupal",
+    "name": "Coaching grupal",
+    "category": "coaching",
+    "price": 18.0,
+    "image": "img/productos/pack.jpg",
+    "description": "Sesión para equipos (macro y roles)."
+  },
+  {
+    "id": "pack-inicial",
+    "name": "Pack Inicial",
+    "category": "items",
+    "price": 7.5,
+    "image": "img/productos/pack.jpg",
+    "description": "Skins básicas + guía de héroes."
+  },
+  {
+    "id": "pack-pro",
+    "name": "Pack Pro",
+    "category": "items",
+    "price": 20.0,
+    "image": "img/productos/pack.jpg",
+    "description": "Skins premium + 1 coaching."
+  },
+  {
+    "id": "pack-support",
+    "name": "Pack Support",
+    "category": "items",
+    "price": 9.0,
+    "image": "img/productos/pack.jpg",
+    "description": "Guía wards + tips de rotación."
+  },
+  {
+    "id": "camiseta-dota",
+    "name": "Camiseta Dota 1",
+    "category": "camisetas",
+    "price": 14.99,
+    "image": "img/productos/camiseta.jpg",
+    "description": "Camiseta gamer edición Arcana Store."
+  },
+  {
+    "id": "gorra-dota",
+    "name": "Gorra Dota 1",
+    "category": "gorras",
+    "price": 11.99,
+    "image": "img/productos/gorra.jpg",
+    "description": "Gorra gamer con logo inspirado en Dota."
+  }
+]
